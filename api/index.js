@@ -28,6 +28,10 @@ app.use(cors({
 
 mongoose.connect(process.env.MONGO_URL);
  
+app.use("/", (req, res) => {
+    res.send("Server is running.");
+});
+
 app.get('/test', (req, res) => {
     res.json('test ok');
 });
