@@ -25,7 +25,7 @@ const jwtSecret = 'adfas-dfasdfsdfa-asdf';
 app.use(express.json());
 app.use(cookieParser());
 //app.use('/Uploads', express.static(__dirname + '/Uploads'));
-console.log("started...", __dirname);
+console.log("started..+.", __dirname);
 
 app.use(cors({
     credentials: true,
