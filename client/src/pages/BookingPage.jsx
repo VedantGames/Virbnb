@@ -13,7 +13,7 @@ function BookingPage() {
   const [redirect, setRedirect] = useState(false);
 
   useEffect(() => {
-    axios.get('/bookings/'+bookingId).then(responce => {
+    axios.get('/booking/'+bookingId).then(responce => {
       setBookingDetails(responce.data);
     })
   }, [bookingId]);

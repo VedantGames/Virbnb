@@ -188,7 +188,7 @@ app.post('/reserve', async (req, res) => {
     }
 });
 
-app.get('/bookings', (req, res) => {
+app.get('/bookings/:id', (req, res) => {
     const {token} = req.cookies;
     jst.verify(token, jwtSecret, {}, async (err, userData) => {
         const {id} = userData;
@@ -196,7 +196,7 @@ app.get('/bookings', (req, res) => {
     });
 });
 
-app.get('/bookings/:id', async (req, res) => {
+app.get('/booking/:id', async (req, res) => {
     const {id} = req.params; 
     res.json(await Bookings.findById(id));
 })

@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import AccountNav from '../AccountNav'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../UserContext';
 
 function BookingsPage() {
   const [places, setPlaces] = useState(null);
+  const {user} = useContext(UserContext);
+
   useEffect(() => {
-    axios.get('/bookings').then(({data}) => {
+    axios.get('/bookings/'+user._id).then(({data}) => {
       setPlaces(data);
     })
   }, []);
