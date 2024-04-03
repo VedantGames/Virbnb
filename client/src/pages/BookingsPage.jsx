@@ -20,7 +20,6 @@ function BookingsPage() {
       <div>
         {places && places.map(place => (
           <Link to={'/bookings/' + place._id} key={place._id} className='h-60 flex bg-gray-200 rounded-2xl overflow-hidden mb-2'>
-            {console.log(place)}
             <div className='h-full w-80'>
               <img src={"https://virbnb-server.vercel.app/Uploads/" + place.photo} alt="" className='w-full h-full object-cover' />
             </div>

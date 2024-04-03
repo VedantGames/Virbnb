@@ -26,15 +26,15 @@ export default function PlacesPage() {
             </div>
             <div className="mt-4">
                 {places.length > 0 && places.map(place => (
-                    <Link to={'/account/places/'+place._id} className="flex cursor-pointer gap-4 bg-gray-100 p-4 rounded-2xl">
-                        <div className="flex w-32 h-32 bg-gray-300">
-                            {place.photos.length > 0 && (
-                                <img className="object-cover" src={'https://virbnb-server.vercel.app/Uploads/' + place.photos[0]} alt="" />
-                            )}
+                    <Link to={'/account/places/'+place._id} key={place._id} className="h-60 flex bg-gray-200 rounded-2xl overflow-hidden mb-2">
+                        <div>
+                            <div className="h-full w-80">
+                                <img src={'https://virbnb-server.vercel.app/Uploads/' + place.photos[0]} alt="" className="h-full w-full object-cover" />
+                            </div>
                         </div>
-                        <div className="grow-0 shrink">
-                            <h2 className="text-xl">{place.title}</h2>
-                            <p className="test-sm mt-2">{place.description}</p>
+                        <div className="ml-2 mr-12 my-4">
+                            <h2 className="text-3xl">{place.title}</h2>
+                            <p className="test-base mt-2">{place.description}</p>
                         </div>
                     </Link>
                 ))}
