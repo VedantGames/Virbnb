@@ -1,5 +1,8 @@
+console.log("starting");
 const mongoose = require('mongoose');
+console.log("mongoose");
 const express = require('express');
+console.log("express");
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jst = require('jsonwebtoken');
@@ -10,9 +13,11 @@ const cookieParser = require('cookie-parser');
 const imageDownloader = require('image-downloader'); 
 const multer = require('multer');
 const fs = require('fs');
+console.log("imported all");
 
 require('dotenv').config()
 const app = express();
+console.log("started server");
 
 const bcryptSalt = bcrypt.genSaltSync(10);
 const jwtSecret = 'adfas-dfasdfsdfa-asdf';
@@ -20,6 +25,7 @@ const jwtSecret = 'adfas-dfasdfsdfa-asdf';
 app.use(express.json());
 app.use(cookieParser());
 app.use('/Uploads', express.static(__dirname + '/Uploads'));
+console.log("started...");
 
 app.use(cors({
     credentials: true,
