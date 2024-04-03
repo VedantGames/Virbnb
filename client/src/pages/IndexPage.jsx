@@ -15,7 +15,7 @@ export default function IndexPage() {
                 <Link to={'/place/'+place._id} className="mb-4">
                     <div className="bg-gray-500 mb-2 rounded-2xl flex" style={{height: "16.4rem", width: "17rem"}}>
                         {place.photos?.[0] && (
-                            <img className="rounded-2xl object-cover" src={'http://localhost:4000/Uploads/' + place.photos?.[0]} alt="" />
+                            <img className="rounded-2xl object-cover" src={'https://virbnb-server.vercel.app/Uploads/' + place.photos?.[0]} alt="" />
                         )}
                     </div>
                     <h2 className="font-bold truncate">{place.title}</h2>

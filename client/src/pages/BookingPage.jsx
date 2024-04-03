@@ -59,7 +59,7 @@ function BookingPage() {
           </div>
           {place?.photos?.length > 0 && place.photos.map(photo => (
             <div key={photo} className='flex justify-center'>
-              <img src={'http://localhost:4000/Uploads/'+photo} className='-ml-40' alt="" />
+              <img src={'https://virbnb-server.vercel.app/Uploads/'+photo} className='-ml-40' alt="" />
             </div>
           ))}
         </div>

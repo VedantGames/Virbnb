@@ -19,7 +19,7 @@ function BookingsPage() {
           <Link to={'/bookings/' + place._id} key={place._id} className='h-60 flex bg-gray-200 rounded-2xl overflow-hidden mb-2'>
             {console.log(place)}
             <div className='h-full w-80'>
-              <img src={"http://localhost:4000/Uploads/" + place.photo} alt="" className='w-full h-full object-cover' />
+              <img src={"https://virbnb-server.vercel.app/Uploads/" + place.photo} alt="" className='w-full h-full object-cover' />
             </div>
             <div className='p-3 py-5'>
               <div className='flex flex-col h-full justify-between'>
