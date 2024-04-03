@@ -79,7 +79,7 @@ function BookingPage() {
               <div>
                 {place.photos?.[0] && (
                   <div className='size-full'>
-                    <img className='object-cover size-full'src={'http://localhost:4000/Uploads/'+place.photos[0]} alt="" />
+                    <img className='object-cover size-full'src={'https://virbnb-server.vercel.app/Uploads/'+place.photos[0]} alt="" />
                   </div>
                 )}
               </div>
@@ -87,22 +87,22 @@ function BookingPage() {
                 <div className='grid grid-cols-2 grid-rows-2 gap-2 size-full'>
                   <div className=' size-full'>
                     {place.photos?.[1] && (
-                        <img className='object-cover size-full' src={'http://localhost:4000/Uploads/'+place.photos[1]} alt="" />
+                        <img className='object-cover size-full' src={'https://virbnb-server.vercel.app/Uploads/'+place.photos[1]} alt="" />
                     )}
                   </div>
                   <div className=' size-full'>
                     {place.photos?.[3] && (
-                        <img className='object-cover size-full' src={'http://localhost:4000/Uploads/'+place.photos[3]} alt="" />
+                        <img className='object-cover size-full' src={'https://virbnb-server.vercel.app/Uploads/'+place.photos[3]} alt="" />
                     )}
                   </div>
                   <div className=' size-full'>
                     {place.photos?.[2] && (
-                        <img className='object-cover size-full' src={'http://localhost:4000/Uploads/'+place.photos[2]} alt="" />
+                        <img className='object-cover size-full' src={'https://virbnb-server.vercel.app/Uploads/'+place.photos[2]} alt="" />
                     )}
                   </div>
                   <div className=' size-full'>
                     {place.photos?.[4] && (
-                        <img className='object-cover size-full' src={'http://localhost:4000/Uploads/'+place.photos[4]} alt="" />
+                        <img className='object-cover size-full' src={'https://virbnb-server.vercel.app/Uploads/'+place.photos[4]} alt="" />
                     )}
                   </div>
                 </div>
