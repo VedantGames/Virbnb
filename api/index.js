@@ -102,7 +102,7 @@ app.post('/upload-by-link', async (req,res) => {
 })
 
 
-const photosMiddleware = multer({dest:'Uploads/'});
+// const photosMiddleware = multer({dest:'Uploads/'});
 app.post('/upload',photosMiddleware.array('photos', 100), (req,res) => {
     const uploadedFiles = [];
     for (let i = 0; i < req.files.length; i++) {
@@ -110,8 +110,8 @@ app.post('/upload',photosMiddleware.array('photos', 100), (req,res) => {
         const parts = originalname.split('.');
         const ext = parts[parts.length - 1]; 
         const newPath = path + '.' + ext;
-        fs.renameSync(path, newPath);
-        uploadedFiles.push(newPath.replace("Uploads\\", ''));
+        // fs.renameSync(path, newPath);
+        // uploadedFiles.push(newPath.replace("Uploads\\", ''));
     }
     res.json(uploadedFiles);
 });
