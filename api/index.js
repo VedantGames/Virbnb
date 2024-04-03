@@ -92,13 +92,13 @@ app.post('/logout', (req,res) => {
 });
 
 app.post('/upload-by-link', async (req,res) => {
-    const {link} = req.body;
-    const newName = 'photo' + Date.now() + '.jpeg';
-    await imageDownloader.image({
-        url: link,
-        dest: __dirname + '/Uploads/' + newName,
-    })
-    res.json(newName);
+    // const {link} = req.body;
+    // const newName = 'photo' + Date.now() + '.jpeg';
+    // await imageDownloader.image({
+    //     url: link,
+    //     dest: __dirname + '/Uploads/' + newName,
+    // })
+    res.json("not ok");
 })
 
 
