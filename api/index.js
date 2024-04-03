@@ -35,7 +35,7 @@ app.use(cors({
 mongoose.connect(process.env.MONGO_URL);
 
 app.get('/test', (req, res) => {
-    res.json('test ok');
+    res.json('Workinggg');
 });
  
 app.post('/register', async (req,res) => {
