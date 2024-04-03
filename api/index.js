@@ -29,7 +29,7 @@ console.log("started..+.", __dirname);
 
 app.use(cors({
     credentials: true,
-    origin: 'https://virbnb.vercel.app',
+    origin: 'http://localhost:5173',
 }));
 
 mongoose.connect(process.env.MONGO_URL);
