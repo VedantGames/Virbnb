@@ -190,7 +190,7 @@ app.post('/reserve', async (req, res) => {
 
 app.get('/bookings/:id', async (req, res) => {
     const {id} = req.params;
-    res.json( await Bookings.findById(id));
+    res.json( await Bookings.find({userId: id}));
 });
 
 app.get('/booking/:id', async (req, res) => {
