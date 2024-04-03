@@ -22,7 +22,7 @@ export default function IndexPage() {
         });
     }, []);
     return(
-        <div className="mt-16 grid gap-x-6 gap-y-3 grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
+        <div className="mt-16 grid gap-x-6 gap-y-3 grid-cols-1 md:grid-cols-3 lg:grid-cols-6">
             {places.length > 0 && places.map(place => (
                 <Link to={'/place/'+place._id} className="mb-4">
                     <div className="flex justify-center items-center" style={{height: "16.4rem", width: "17rem"}}>
