@@ -25,6 +25,7 @@ const jwtSecret = 'adfas-dfasdfsdfa-asdf';
 app.use(express.json());
 app.use(cookieParser());
 app.use('/Uploads', express.static(__dirname + '/Uploads'));
+app.use('/dest', express.static(__dirname + '/Destinations'));
 console.log("started..+.", __dirname);
 
 app.use(cors({
