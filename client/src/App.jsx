@@ -33,7 +33,6 @@ function App() {
           <Route path='/account/places/:id' element={<PlacesFormPage />} />
           <Route path='/bookings/:id' element={<BookingPage />} />
           <Route path='/place/:id' element={<PlacePage />} />
-          <Route path='/dest/:id' element={<img src='/assets/Destinations/flexible.jpg' />}/>
         </Route>
       </Routes>
     </UserContextProvider>

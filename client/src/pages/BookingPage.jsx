@@ -72,7 +72,7 @@ function BookingPage() {
     {place && (
       <>
         <hr className='mt-4 -mx-20 '/>
-        <div className='-mx-20 px-96 py-4'>
+        <div className='-mx-20 px-4 md:px-32 lg:px-96 py-4'>
           <h1 className='text-3xl mb-4'>{place.title}</h1>
           <div className="relative mb-8 cursor-pointer" onClick={() => setShowAllPhotos(true)}>
             <div className="grid gap-2 grid-cols-2 rounded-2xl overflow-hidden h-[32rem]">
@@ -116,7 +116,7 @@ function BookingPage() {
             </button>
           </div>
         </div>
-        <div className='grid grid-cols-[2fr_1fr] mx-72'>
+        <div className='grid grid-cols-[2fr_1fr] sm:mx-0 md:mx-10 lg:mx-72'>
           <div className='mr-24'>
             <h1 className='text-2xl font-medium'>{place.address}</h1>
             <h3 className='font-medium -mt-1'>

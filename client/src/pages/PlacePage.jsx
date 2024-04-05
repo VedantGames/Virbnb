@@ -91,7 +91,7 @@ function PlacePage() {
   return (
     <>
       <hr className='mt-4 -mx-20'/>
-      <div className='-mx-20 px-96 py-4'>
+      <div className='-mx-20 px-4 md:px-32 lg:px-96 py-4'>
         <h1 className='text-3xl mb-4'>{place.title}</h1>
         <div className="relative mb-8 cursor-pointer" onClick={() => setShowAllPhotos(true)}>
           <div className="grid gap-2 grid-cols-2 rounded-2xl overflow-hidden h-[32rem]">
