@@ -10,6 +10,9 @@ export default {
         primary: "#F5385D"
       },
     },
+    fontSize: {
+      xxs: [".6rem", "0.7rem"],
+    },
   },
   plugins: [],
 }

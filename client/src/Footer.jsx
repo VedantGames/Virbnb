@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <footer>
-      <div className='h-auto py-20 px-28 text-white' style={{backgroundColor: "#323232"}}>
-        <div className='grid grid-cols-[2fr_1fr_1fr]'>
-          <div className='pr-28'>
+      <div className='h-auto lg:py-20 lg:px-28 py-10 px-16 text-white' style={{backgroundColor: "#323232"}}>
+        <div className='grid md:grid-cols-[2fr_1fr_1fr] lg:gap-0 gap-8'>
+          <div className='lg:pr-28 md:pr-10'>
             <h1 className=' text-red-600 text-5xl font-medium mb-5'>Virbnb</h1>
-            <p className='font-medium text-stone-200'>
+            <p className='font-medium text-stone-200 w-full'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis, hic nesciunt impedit ducimus veritatis non at alias ex similique dolorum accusamus! Est, nisi. Officiis atque similique placeat pariatur exercitationem!
             </p>
             <div className='flex gap-2 mt-3'>
