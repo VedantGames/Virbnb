@@ -33,7 +33,7 @@ app.use(cors({
     origin: 'https://virbnb.vercel.app',
 }));
 
-mongoose.connect(process.env.MONGO_URL);
+mongoose.connect("mongodb+srv://Booking:vedant2549@bd.hcqhs2c.mongodb.net/?retryWrites=true&w=majority&appName=BD");
 
 app.get('/test', (req, res) => {
     res.json('Workinggg');
